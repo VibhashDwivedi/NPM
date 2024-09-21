@@ -1,3 +1,6 @@
+*{
+  font-family: 'Source Sans 3', sans-serif;
+}
 .form-control{
   box-shadow: none;
   outline: none;

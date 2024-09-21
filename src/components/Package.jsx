@@ -73,7 +73,7 @@ const Package = () => {
             
             
              
-              <div className='p-3' dangerouslySetInnerHTML={{ __html: modifiedReadme }} />
+              <div className='' dangerouslySetInnerHTML={{ __html: modifiedReadme }} />
 
               <h4>
                 Keywords
