@@ -73,7 +73,7 @@ const Search = () => {
           <div className='search-results shadow-lg'>
             {data.slice(0, 9).map((item) => ( // Limit to 9 results
               <div key={item.package.name} className='search-result-item' onClick={handleResultClick}>
-                <Link to={`http://localhost:3000/package/${item.package.name}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                <Link to={`https://npm-xi.vercel.app/package/${item.package.name}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                   <h6>{item.package.name}</h6>
                 </Link>
                 <p>{item.package.description}</p>
