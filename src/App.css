@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+.form-control{
+  box-shadow: none;
+  outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-control:focus{
+  border-color: black;
+  box-shadow: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-container {
+  position: relative;
+  padding: 0px 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: none;
+  z-index: 1000;
+  max-height: 500px;
+  margin: 0px 10px;
+  border-top: none;
+
+
 }
 
-.App-link {
-  color: #61dafb;
+.search-result-item {
+  padding: 5px 10px; /* Adjust padding to make the box smaller */
+  border-bottom: 1px solid #eee;
+  font-size: 0.875rem; /* Adjust font size to make the text smaller */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-result-item h6 {
+  margin: 0;
+  font-size: 1rem; /* Adjust font size for the heading */
+  color: black;
+  text-decoration: none !important;
 }
+
+.search-result-item p {
+  margin: 0;
+  color: #666;
+  font-size: 0.875rem; /* Adjust font size for the description */
+}
+
